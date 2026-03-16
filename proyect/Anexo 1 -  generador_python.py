@@ -61,7 +61,7 @@ except Exception:
     ventas['dia_semana'] = ventas['fecha'].dt.day_name()
 
 # Guardar CSV
-csv_path = 'ventas_2023.csv'
+csv_path = 'proyect/ventas_2023.csv'
 ventas.to_csv(csv_path, index=False)
 print(f"Archivo guardado: {csv_path} (filas={len(ventas)})")
 
@@ -96,7 +96,7 @@ plt.xlabel('Mes')
 plt.ylabel('Total de Ventas')
 plt.grid(True)
 plt.tight_layout()
-plt.savefig('tendencia_mensual.png')
+plt.savefig('proyect/tendencia_mensual.png')
 print("Gráfico guardado: tendencia_mensual.png")
 plt.close()
 
@@ -107,7 +107,7 @@ plt.title('Ventas Totales por Mes')
 plt.xlabel('Mes')
 plt.ylabel('Total de Ventas')
 plt.tight_layout()
-plt.savefig('ventas_por_mes.png')
+plt.savefig('proyect/ventas_por_mes.png')
 print("Gráfico guardado: ventas_por_mes.png")
 plt.close()
 
