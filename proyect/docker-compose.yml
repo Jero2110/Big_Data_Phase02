@@ -6,7 +6,7 @@ services:
       - "8888:8888"
       - "4040:4040"
     volumes:
-      - .:/home/jero/work
+      - .:/home/jovyan/work
     environment:
       - JUPYTER_ENABLE_LAB=yes
       - JUPYTER_TOKEN=unad123
